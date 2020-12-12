@@ -7,6 +7,7 @@ class poost(models.Model):
     created_at=models.DateTimeField(default=timezone.now)
 
     image=models.ImageField(upload_to='post/' ,default=None)
+    active=models.BooleanField(default=False)
  
     class Meta:
         verbose_name = ("poost")
